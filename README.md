@@ -1,7 +1,7 @@
-# N320_Project2
+# N320 Project 2
 
 ## Group Members
 
-Dillon Polley
+Dillon Polley 
 
 Chloe Antonio
