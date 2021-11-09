@@ -1,0 +1,93 @@
+[
+    {
+      "Bachelorettes": [
+        {
+          "name": "Abigail",
+          "lives in": "Pelican Town",
+          "address": "Pierre's General Store",
+          "birthday": {
+            "month": "Fall",
+            "day": 13
+          },
+          "family": ["Pierre", "Caroline"],
+          "friends": ["Sam", "Sebastian"],
+          "gifts": {
+            "love": [
+              "Amethyst",
+              "Banana Pudding",
+              "Blackberry Cobbler",
+              "Chocolate Cake",
+              "Pufferfish",
+              "Pumpkin",
+              "Spicy Eel"
+            ],
+            "hate": ["Clay", "Holly"]
+          }
+        },
+        {
+          "name": "Leah",
+          "lives in": "Cindersap Forest",
+          "address": "Leah's Cottage",
+          "birthday": {
+            "month": "Winter",
+            "day": 23
+          },
+          "family": [],
+          "friends": ["Elliott"],
+          "gifts": {
+            "love": [
+              "Goat Cheese",
+              "Poppyseed Muffin",
+              "Salad",
+              "Stir Fry",
+              "Truffle",
+              "Vegetable Medley",
+              "Wine"
+            ],
+            "hate": ["Bread", "Hashbrowns", "Pancakes", "Pizza", "Void Egg"]
+          }
+        }
+      ]
+    },
+    {
+      "Bachelors": [
+        {
+          "name": "Alex",
+          "lives in": "Pelican Town",
+          "address": "1 River Road",
+          "birthday": {
+            "month": "Summer",
+            "day": 13
+          },
+          "family": ["Evelyn", "George"],
+          "friends": ["Haley"],
+          "gifts": {
+            "love": ["Complete Breakfast", "Salmon Dinner"],
+            "hate": ["Holly", "Quartz"]
+          }
+        },
+        {
+          "name": "Harvey",
+          "lives in": "Pelican Town",
+          "address": "Medical Clinic",
+          "birthday": {
+            "month": "Winter",
+            "day": 14
+          },
+          "family": [],
+          "friends": ["Maru"],
+          "gifts": {
+            "love": ["Coffee", "Pickles", "Super Meal", "Truffle Oil", "Wine"],
+            "hate": [
+              "Coral",
+              "Nautilus Shell",
+              "Rainbow Shell",
+              "Salmonberry",
+              "Spice Berry"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+  
