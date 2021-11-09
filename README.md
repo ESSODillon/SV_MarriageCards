@@ -1,6 +1,8 @@
-# N320 Project 2
+# Stardew Valley Marriage Candidates
 
-## Group Members
+## N320 Project 2
+
+### Group Members
 
 Dillon Polley 
 
