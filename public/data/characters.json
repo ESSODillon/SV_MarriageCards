@@ -22,7 +22,8 @@
             "Spicy Eel"
           ],
           "hate": ["Clay", "Holly"]
-        }
+        },
+        "image": "https://stardewvalleywiki.com/mediawiki/images/8/88/Abigail.png"
       },
       {
         "name": "Leah",
@@ -45,7 +46,8 @@
             "Wine"
           ],
           "hate": ["Bread", "Hashbrowns", "Pancakes", "Pizza", "Void Egg"]
-        }
+        },
+        "image": "https://stardewvalleywiki.com/mediawiki/images/e/e6/Leah.png"
       }
     ]
   },
@@ -64,7 +66,8 @@
         "gifts": {
           "love": ["Complete Breakfast", "Salmon Dinner"],
           "hate": ["Holly", "Quartz"]
-        }
+        },
+        "image": "https://stardewvalleywiki.com/mediawiki/images/0/04/Alex.png"
       },
       {
         "name": "Harvey",
@@ -85,7 +88,8 @@
             "Salmonberry",
             "Spice Berry"
           ]
-        }
+        },
+        "image": "https://stardewvalleywiki.com/mediawiki/images/9/95/Harvey.png"
       }
     ]
   }

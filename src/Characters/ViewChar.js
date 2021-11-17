@@ -15,17 +15,37 @@ export default function ViewChar(props) {
   }, []);
 
   const guys = bachelors.map((guy, key) => (
-    <Card id={key} name={guy.name} area={guy.area} address={guy.address} />
+    <Card
+      id={key}
+      name={guy.name}
+      area={guy.area}
+      address={guy.address}
+      birthday={guy.birthday}
+      family={guy.family}
+      friends={guy.friends}
+      gifts={guy.gifts}
+      image={guy.image}
+    />
   ));
 
   const gals = bachelorettes.map((gal, key) => (
-    <Card id={key} name={gal.name} area={gal.area} address={gal.address} />
+    <Card
+      id={key}
+      name={gal.name}
+      area={gal.area}
+      address={gal.address}
+      birthday={gal.birthday}
+      family={gal.family}
+      friends={gal.friends}
+      gifts={gal.gifts}
+      image={gal.image}
+    />
   ));
 
   // console.log(characters[0].Bachelorettes[0]);
 
   return (
-    <div>
+    <div className="characters">
       <div>{guys}</div>
       <div>{gals}</div>
     </div>
