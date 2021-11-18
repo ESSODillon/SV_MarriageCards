@@ -17,7 +17,12 @@ function Bachelors({
   image,
 }) {
   return (
-    <Card sx={{ minWidth: 275 }}>
+    <Card
+      sx={{
+        minWidth: 275,
+        // background: "linear-gradient(to right bottom, #430089, #82ffa1)",
+      }}
+    >
       <CardContent>
         <Avatar src={image}></Avatar>
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
@@ -36,7 +41,9 @@ function Bachelors({
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Learn More</Button>
+        <Button variant="contained" size="small">
+          Learn More
+        </Button>
       </CardActions>
     </Card>
   );

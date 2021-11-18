@@ -45,9 +45,16 @@ export default function ViewChar(props) {
   // console.log(characters[0].Bachelorettes[0]);
 
   return (
-    <div className="characters">
-      <div>{guys}</div>
-      <div>{gals}</div>
+    <div className="content">
+      <div className="headers">
+        <h1 className="SVFont">Stardew Valley</h1>
+        <h2 className="SVFont">Marriage Cards</h2>
+      </div>
+
+      <div className="characters">
+        <div>{guys}</div>
+        <div>{gals}</div>
+      </div>
     </div>
   );
 }

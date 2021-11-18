@@ -1,3 +1,43 @@
+* {
+  /* border: red 2px solid; */
+}
+
+@font-face {
+  font-family: StardewValley;
+  src: url(./fonts/Stardew_Valley.ttf);
+}
+
+body {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(31, 67, 103),
+    rgba(4, 120, 231),
+    rgba(97, 227, 229)
+  );
+  height: 100vh;
+}
+
+.content {
+  position: relative;
+}
+
 .characters {
   display: flex;
+  justify-content: space-evenly;
+}
+
+.SVFont {
+  font-size: 40px;
+  letter-spacing: 2px;
+  color: #b25929;
+  font-family: StardewValley;
+}
+
+.headers {
+  padding-top: 0.25px;
+  padding-bottom: 0.25px;
+  width: 100vw;
+  text-align: center;
+  background-color: #ffd789;
+  margin-bottom: 30px;
 }
