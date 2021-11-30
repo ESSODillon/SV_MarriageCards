@@ -35,9 +35,9 @@ function Bachelors({
           {address}
         </Typography>
         <Typography variant="body2">
-          {birthday.month} {birthday.day}
+          Birthday:
           <br />
-          {family[0]}
+          {birthday.month} {birthday.day}
         </Typography>
       </CardContent>
       <CardActions>
