@@ -14,7 +14,7 @@ body {
     rgba(4, 120, 231),
     rgba(97, 227, 229)
   );
-  height: 100vh;
+  height: 100%;
 }
 
 .content {
@@ -24,12 +24,21 @@ body {
 .characters {
   display: flex;
   justify-content: space-evenly;
+  padding: 25px;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.name {
+  font-family: StardewValley;
 }
 
 .SVFont {
   font-size: 40px;
   letter-spacing: 2px;
-  color: #b25929;
+  color: #904c33;
   font-family: StardewValley;
 }
 
@@ -38,6 +47,15 @@ body {
   padding-bottom: 0.25px;
   width: 100vw;
   text-align: center;
-  background-color: #ffd789;
+  background: linear-gradient(to bottom, #eca65e, #fbc470, #eca65e);
   margin-bottom: 30px;
+}
+
+#infoBox {
+  width: 80%;
+  height: 80%;
+  margin: 7% auto;
+  background-color: #eca65e;
+  border-radius: 6px;
+  padding: 4px;
 }

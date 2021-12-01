@@ -6,7 +6,9 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Avatar from "@mui/material/Avatar";
 
-function Bachelors({
+function Characters({
+  id,
+  num,
   name,
   area,
   address,
@@ -15,20 +17,30 @@ function Bachelors({
   friends,
   gifts,
   image,
+  showInfo,
 }) {
   return (
     <Card
+      className="card"
       sx={{
         minWidth: 275,
-        // background: "linear-gradient(to right bottom, #430089, #82ffa1)",
+        background: "linear-gradient(to bottom, #ECA65E, #FBC470, #ECA65E)",
       }}
     >
       <CardContent>
-        <Avatar src={image}></Avatar>
+        <Avatar
+          sx={{
+            float: "right",
+            backgroundColor: "white",
+            width: "50px",
+            height: "50px",
+          }}
+          src={image}
+        ></Avatar>
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
           {area}
         </Typography>
-        <Typography variant="h5" component="div">
+        <Typography className="name" variant="h5" component="div">
           {name}
         </Typography>
         <Typography sx={{ mb: 1.5 }} color="text.secondary">
@@ -41,7 +53,20 @@ function Bachelors({
         </Typography>
       </CardContent>
       <CardActions>
-        <Button variant="contained" size="small">
+        <Button
+          onClick={() => {
+            showInfo(id, num);
+          }}
+          sx={{
+            background: "#904c33",
+            color: "white",
+            "&:hover": {
+              backgroundColor: "#6e2f18",
+            },
+          }}
+          variant="contained"
+          size="small"
+        >
           Learn More
         </Button>
       </CardActions>
@@ -49,4 +74,4 @@ function Bachelors({
   );
 }
 
-export default Bachelors;
+export default Characters;

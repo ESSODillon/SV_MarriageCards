@@ -2,6 +2,8 @@
   {
     "Bachelorettes": [
       {
+        "id": 0,
+        "num": 0,
         "name": "Abigail",
         "area": "Pelican Town",
         "address": "Pierre's General Store",
@@ -26,6 +28,8 @@
         "image": "https://stardewvalleywiki.com/mediawiki/images/8/88/Abigail.png"
       },
       {
+        "id": 1,
+        "num": 1,
         "name": "Emily",
         "area": "Pelican Town",
         "address": "2 Willow Lane",
@@ -52,6 +56,8 @@
         "image": "https://stardewvalleywiki.com/mediawiki/images/2/28/Emily.png"
       },
       {
+        "id": 2,
+        "num": 2,
         "name": "Hailey",
         "area": "Pelican Town",
         "address": "2 Willow Lane",
@@ -73,6 +79,8 @@
         "image": "https://stardewvalleywiki.com/mediawiki/images/1/1b/Haley.png"
       },
       {
+        "id": 3,
+        "num": 3,
         "name": "Leah",
         "area": "Cindersap Forest",
         "address": "Leah's Cottage",
@@ -97,6 +105,8 @@
         "image": "https://stardewvalleywiki.com/mediawiki/images/e/e6/Leah.png"
       },
       {
+        "id": 4,
+        "num": 4,
         "name": "Maru",
         "area": "The Mountain",
         "address": "24 Mountain Road",
@@ -125,6 +135,8 @@
         "image": "https://stardewvalleywiki.com/mediawiki/images/f/f8/Maru.png"
       },
       {
+        "id": 5,
+        "num": 5,
         "name": "Penny",
         "area": "Pelican Town",
         "address": "Trailer",
@@ -155,6 +167,8 @@
   {
     "Bachelors": [
       {
+        "id": 6,
+        "num": 0,
         "name": "Alex",
         "area": "Pelican Town",
         "address": "1 River Road",
@@ -171,6 +185,8 @@
         "image": "https://stardewvalleywiki.com/mediawiki/images/0/04/Alex.png"
       },
       {
+        "id": 7,
+        "num": 1,
         "name": "Elliott",
         "area": "The Beach",
         "address": "Elliott's Cabin",
@@ -187,6 +203,8 @@
         "image": "https://stardewvalleywiki.com/mediawiki/images/b/bd/Elliott.png"
       },
       {
+        "id": 8,
+        "num": 2,
         "name": "Harvey",
         "area": "Pelican Town",
         "address": "Medical Clinic",
@@ -209,6 +227,8 @@
         "image": "https://stardewvalleywiki.com/mediawiki/images/9/95/Harvey.png"
       },
       {
+        "id": 9,
+        "num": 3,
         "name": "Sam",
         "area": "Pelican Town",
         "address": "1 Willow Lane",
@@ -237,6 +257,8 @@
         "image": "https://stardewvalleywiki.com/mediawiki/images/9/94/Sam.png"
       },
       {
+        "id": 10,
+        "num": 4,
         "name": "Sebastian",
         "area": "The Mountain",
         "address": "24 Mountain Road",
@@ -258,6 +280,8 @@
         "image": "https://stardewvalleywiki.com/mediawiki/images/a/a8/Sebastian.png"
       },
       {
+        "id": 11,
+        "num": 5,
         "name": "Shane",
         "area": "Cindersnap Forest",
         "address": "Marnie's Ranch",
