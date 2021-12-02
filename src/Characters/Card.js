@@ -6,31 +6,25 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Avatar from "@mui/material/Avatar";
 
-function Characters({
-  id,
-  num,
-  name,
-  area,
-  address,
-  birthday,
-  image,
-  showInfo,
-}) {
+function Characters({ id, num, name, area, image, showInfo }) {
   return (
     <Card
       className="card"
       sx={{
         minWidth: 275,
         background: "linear-gradient(to bottom, #ECA65E, #FBC470, #ECA65E)",
+        position: "relative",
       }}
     >
       <CardContent>
         <Avatar
           sx={{
-            float: "right",
-            backgroundColor: "#904c33",
-            width: "50px",
-            height: "50px",
+            position: "absolute",
+            bottom: "25%",
+            right: 0,
+            // backgroundColor: "#904c33",
+            width: "100px",
+            height: "100px",
           }}
           src={image}
         ></Avatar>

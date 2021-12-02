@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Card from "./Card";
 import Modal from "@mui/material/Modal";
+import Carousel from "react-elastic-carousel";
 
 export default function ViewChar(props) {
   const [bachelors, setBachelors] = useState([]);
   const [bachelorettes, setBachelorettes] = useState([]);
-  const [showModal, setModalOpen] = useState(true);
+  const [showModal, setModalOpen] = useState(false);
   const [chars, setChars] = useState([]);
   const [selectedChar, selectChar] = useState({});
 
@@ -54,6 +55,8 @@ export default function ViewChar(props) {
     />
   ));
 
+  console.log(guys);
+
   return (
     <div className="content">
       <Modal
@@ -63,7 +66,7 @@ export default function ViewChar(props) {
         }}
       >
         <div id="infoBox">
-          <h1>Dillon</h1>
+          <h1>{selectedChar.name}</h1>
         </div>
       </Modal>
 
@@ -72,10 +75,21 @@ export default function ViewChar(props) {
         <h2 className="SVFont">Marriage Cards</h2>
       </div>
 
-      <div className="characters">
+      <Carousel>
+        <div className="row">{gals}</div>
+      </Carousel>
+
+      <br />
+      <br />
+
+      <Carousel>
+        <div className="row">{guys}</div>
+      </Carousel>
+
+      {/* <div className="characters">
         <div className="row">{guys}</div>
         <div className="row">{gals}</div>
-      </div>
+      </div> */}
     </div>
   );
 
@@ -84,13 +98,11 @@ export default function ViewChar(props) {
 
     // Bachelorettes
     if (charID < 6) {
-      console.log(chars[0].Bachelorettes[charKey]);
       selectChar(chars[0].Bachelorettes[charKey]);
     }
 
     // Bachelors
     if (charID > 5) {
-      console.log(chars[1].Bachelors[charKey]);
       selectChar(chars[1].Bachelors[charKey]);
     }
 
