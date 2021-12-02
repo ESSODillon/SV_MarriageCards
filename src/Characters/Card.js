@@ -13,9 +13,6 @@ function Characters({
   area,
   address,
   birthday,
-  family,
-  friends,
-  gifts,
   image,
   showInfo,
 }) {
@@ -31,7 +28,7 @@ function Characters({
         <Avatar
           sx={{
             float: "right",
-            backgroundColor: "white",
+            backgroundColor: "#904c33",
             width: "50px",
             height: "50px",
           }}
@@ -40,17 +37,9 @@ function Characters({
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
           {area}
         </Typography>
-        <Typography className="name" variant="h5" component="div">
+        <p className="name" variant="h5" component="div">
           {name}
-        </Typography>
-        <Typography sx={{ mb: 1.5 }} color="text.secondary">
-          {address}
-        </Typography>
-        <Typography variant="body2">
-          Birthday:
-          <br />
-          {birthday.month} {birthday.day}
-        </Typography>
+        </p>
       </CardContent>
       <CardActions>
         <Button

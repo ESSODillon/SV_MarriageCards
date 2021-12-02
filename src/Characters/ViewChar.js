@@ -5,7 +5,7 @@ import Modal from "@mui/material/Modal";
 export default function ViewChar(props) {
   const [bachelors, setBachelors] = useState([]);
   const [bachelorettes, setBachelorettes] = useState([]);
-  const [showModal, setModalOpen] = useState(false);
+  const [showModal, setModalOpen] = useState(true);
   const [chars, setChars] = useState([]);
   const [selectedChar, selectChar] = useState({});
 
@@ -63,7 +63,7 @@ export default function ViewChar(props) {
         }}
       >
         <div id="infoBox">
-          <p>{selectedChar.name}</p>
+          <h1>Dillon</h1>
         </div>
       </Modal>
 
@@ -73,8 +73,8 @@ export default function ViewChar(props) {
       </div>
 
       <div className="characters">
-        <div>{guys}</div>
-        <div>{gals}</div>
+        <div className="row">{guys}</div>
+        <div className="row">{gals}</div>
       </div>
     </div>
   );
@@ -85,13 +85,13 @@ export default function ViewChar(props) {
     // Bachelorettes
     if (charID < 6) {
       console.log(chars[0].Bachelorettes[charKey]);
-      // selectChar(chars[1].Bachelorettes[charKey]);
+      selectChar(chars[0].Bachelorettes[charKey]);
     }
 
     // Bachelors
     if (charID > 5) {
-      console.log(chars[0].Bachelors[charKey]);
-      // selectChar(chars[0].Bachelors[charKey]);
+      console.log(chars[1].Bachelors[charKey]);
+      selectChar(chars[1].Bachelors[charKey]);
     }
 
     setModalOpen(true);
