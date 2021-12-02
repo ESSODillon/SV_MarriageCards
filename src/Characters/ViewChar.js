@@ -3,7 +3,7 @@ import Card from "./Card";
 import Modal from "@mui/material/Modal";
 import Carousel from "react-elastic-carousel";
 
-export default function ViewChar(props) {
+export default function ViewChar() {
   const [bachelors, setBachelors] = useState([]);
   const [bachelorettes, setBachelorettes] = useState([]);
   const [showModal, setModalOpen] = useState(false);
@@ -20,8 +20,6 @@ export default function ViewChar(props) {
         setBachelors(data[1].Bachelors);
       });
   }, []);
-
-  // console.log(chars[0].Bachelors[0]);
 
   const guys = bachelors.map((guy, key) => (
     <Card
@@ -55,8 +53,6 @@ export default function ViewChar(props) {
     />
   ));
 
-  console.log(guys);
-
   return (
     <div className="content">
       <Modal
@@ -75,21 +71,26 @@ export default function ViewChar(props) {
         <h2 className="SVFont">Marriage Cards</h2>
       </div>
 
-      <Carousel>
-        <div className="row">{gals}</div>
+      <Carousel itemsToShow={3}>
+        <div>{gals[0]}</div>
+        <div>{gals[1]}</div>
+        <div>{gals[2]}</div>
+        <div>{gals[3]}</div>
+        <div>{gals[4]}</div>
+        <div>{gals[5]}</div>
       </Carousel>
 
       <br />
       <br />
 
-      <Carousel>
-        <div className="row">{guys}</div>
+      <Carousel itemsToShow={3}>
+        <div>{guys[0]}</div>
+        <div>{guys[1]}</div>
+        <div>{guys[2]}</div>
+        <div>{guys[3]}</div>
+        <div>{guys[4]}</div>
+        <div>{guys[5]}</div>
       </Carousel>
-
-      {/* <div className="characters">
-        <div className="row">{guys}</div>
-        <div className="row">{gals}</div>
-      </div> */}
     </div>
   );
 
