@@ -22,7 +22,6 @@ function Characters({ id, num, name, area, image, showInfo }) {
             position: "absolute",
             bottom: "25%",
             right: 0,
-            // backgroundColor: "#904c33",
             width: "100px",
             height: "100px",
           }}
