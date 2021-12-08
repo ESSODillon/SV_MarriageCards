@@ -11,8 +11,14 @@
           "month": "Fall",
           "day": 13
         },
-        "family": ["Pierre", "Caroline"],
-        "friends": ["Sam", "Sebastian"],
+        "family": [
+          "Pierre",
+          "Caroline"
+        ],
+        "friends": [
+          "Sam",
+          "Sebastian"
+        ],
         "gifts": {
           "love": [
             "Amethyst",
@@ -23,7 +29,10 @@
             "Pumpkin",
             "Spicy Eel"
           ],
-          "hate": ["Clay", "Holly"]
+          "hate": [
+            "Clay",
+            "Holly"
+          ]
         },
         "image": "https://stardewvalleywiki.com/mediawiki/images/8/88/Abigail.png"
       },
@@ -37,8 +46,12 @@
           "month": "Spring",
           "day": 27
         },
-        "family": ["Haley"],
-        "friends": ["Sandy"],
+        "family": [
+          "Haley"
+        ],
+        "friends": [
+          "Sandy"
+        ],
         "gifts": {
           "love": [
             "Amethyst",
@@ -51,7 +64,13 @@
             "Topaz",
             "Wool"
           ],
-          "hate": ["Fish Taco", "Holly", "Maki Roll", "Salmon Dinner", "Sashimi"]
+          "hate": [
+            "Fish Taco",
+            "Holly",
+            "Maki Roll",
+            "Salmon Dinner",
+            "Sashimi"
+          ]
         },
         "image": "https://stardewvalleywiki.com/mediawiki/images/2/28/Emily.png"
       },
@@ -65,8 +84,12 @@
           "month": "Spring",
           "day": 14
         },
-        "family": ["Emily"],
-        "friends": ["Alex"],
+        "family": [
+          "Emily"
+        ],
+        "friends": [
+          "Alex"
+        ],
         "gifts": {
           "love": [
             "Coconut",
@@ -74,7 +97,11 @@
             "Pink Cake",
             "Sunflower"
           ],
-          "hate": ["Clay", "Prismatic Shard", "Wild Horseradish"]
+          "hate": [
+            "Clay",
+            "Prismatic Shard",
+            "Wild Horseradish"
+          ]
         },
         "image": "https://stardewvalleywiki.com/mediawiki/images/1/1b/Haley.png"
       },
@@ -89,7 +116,9 @@
           "day": 23
         },
         "family": [],
-        "friends": ["Elliott"],
+        "friends": [
+          "Elliott"
+        ],
         "gifts": {
           "love": [
             "Goat Cheese",
@@ -100,7 +129,13 @@
             "Vegetable Medley",
             "Wine"
           ],
-          "hate": ["Bread", "Hashbrowns", "Pancakes", "Pizza", "Void Egg"]
+          "hate": [
+            "Bread",
+            "Hashbrowns",
+            "Pancakes",
+            "Pizza",
+            "Void Egg"
+          ]
         },
         "image": "https://stardewvalleywiki.com/mediawiki/images/e/e6/Leah.png"
       },
@@ -114,8 +149,15 @@
           "month": "Summer",
           "day": 10
         },
-        "family": ["Demetrius", "Robin", "Sebastian"],
-        "friends": ["Penny", "Harvey"],
+        "family": [
+          "Demetrius",
+          "Robin",
+          "Sebastian"
+        ],
+        "friends": [
+          "Penny",
+          "Harvey"
+        ],
         "gifts": {
           "love": [
             "Battery Pack",
@@ -127,10 +169,16 @@
             "Miner's Treat",
             "Pepper Poppers",
             "Radioactive Bar",
-            "Rhubarb Pie", 
+            "Rhubarb Pie",
             "Strawberry"
           ],
-          "hate": ["Holly", "Honey", "Pickles", "Snow Yam", "Truffle"]
+          "hate": [
+            "Holly",
+            "Honey",
+            "Pickles",
+            "Snow Yam",
+            "Truffle"
+          ]
         },
         "image": "https://stardewvalleywiki.com/mediawiki/images/f/f8/Maru.png"
       },
@@ -144,8 +192,13 @@
           "month": "Fall",
           "day": 2
         },
-        "family": ["Pam"],
-        "friends": ["Maru", "Sam"],
+        "family": [
+          "Pam"
+        ],
+        "friends": [
+          "Maru",
+          "Sam"
+        ],
         "gifts": {
           "love": [
             "Diamond",
@@ -158,7 +211,17 @@
             "Sandfish",
             "Tom Kha Soup"
           ],
-          "hate": ["Beer", "Grape", "Holly", "Hops", "Mead", "Pale Ale", "Piña Colada", "Rabbit's Foot", "Wine"]
+          "hate": [
+            "Beer",
+            "Grape",
+            "Holly",
+            "Hops",
+            "Mead",
+            "Pale Ale",
+            "Piña Colada",
+            "Rabbit's Foot",
+            "Wine"
+          ]
         },
         "image": "https://stardewvalleywiki.com/mediawiki/images/a/ab/Penny.png"
       }
@@ -176,13 +239,25 @@
           "month": "Summer",
           "day": 13
         },
-        "family": ["Evelyn", "George"],
-        "friends": ["Haley"],
+        "family": [
+          "Evelyn",
+          "George"
+        ],
+        "friends": [
+          "Haley"
+        ],
         "gifts": {
-          "love": ["Complete Breakfast", "Salmon Dinner"],
-          "hate": ["Holly", "Quartz"]
+          "love": [
+            "Complete Breakfast",
+            "Salmon Dinner"
+          ],
+          "hate": [
+            "Holly",
+            "Quartz"
+          ]
         },
-        "image": "https://stardewvalleywiki.com/mediawiki/images/0/04/Alex.png"
+        "image": "https://stardewvalleywiki.com/mediawiki/images/0/04/Alex.png",
+        "image-two": "https://stardewvalleywiki.com/mediawiki/images/2/28/Alex_Blush.png"
       },
       {
         "id": 7,
@@ -195,12 +270,28 @@
           "day": 5
         },
         "family": [],
-        "friends": ["Leah", "Willy"],
+        "friends": [
+          "Leah",
+          "Willy"
+        ],
         "gifts": {
-          "love": ["Crab Cakes", "Duck Feather", "Lobster", "Pomegranate", "Squid Ink", "Tom Kha Soup"],
-          "hate": ["Amaranth", "Quartz", "Salmonberry", "Sea Cucumber"]
+          "love": [
+            "Crab Cakes",
+            "Duck Feather",
+            "Lobster",
+            "Pomegranate",
+            "Squid Ink",
+            "Tom Kha Soup"
+          ],
+          "hate": [
+            "Amaranth",
+            "Quartz",
+            "Salmonberry",
+            "Sea Cucumber"
+          ]
         },
-        "image": "https://stardewvalleywiki.com/mediawiki/images/b/bd/Elliott.png"
+        "image": "https://stardewvalleywiki.com/mediawiki/images/b/bd/Elliott.png",
+        "image-two": "https://stardewvalleywiki.com/mediawiki/images/3/3e/Elliott_Surprised.png"
       },
       {
         "id": 8,
@@ -213,9 +304,17 @@
           "day": 14
         },
         "family": [],
-        "friends": ["Maru"],
+        "friends": [
+          "Maru"
+        ],
         "gifts": {
-          "love": ["Coffee", "Pickles", "Super Meal", "Truffle Oil", "Wine"],
+          "love": [
+            "Coffee",
+            "Pickles",
+            "Super Meal",
+            "Truffle Oil",
+            "Wine"
+          ],
           "hate": [
             "Coral",
             "Nautilus Shell",
@@ -224,7 +323,8 @@
             "Spice Berry"
           ]
         },
-        "image": "https://stardewvalleywiki.com/mediawiki/images/9/95/Harvey.png"
+        "image": "https://stardewvalleywiki.com/mediawiki/images/9/95/Harvey.png",
+        "image-two": "https://stardewvalleywiki.com/mediawiki/images/2/21/Harvey_Surprised.png"
       },
       {
         "id": 9,
@@ -236,16 +336,29 @@
           "month": "Summer",
           "day": 17
         },
-        "family": ["Kent", "Jodi", "Vincent"],
-        "friends": ["Abigail", "Penny", "Sebastian"],
+        "family": [
+          "Kent",
+          "Jodi",
+          "Vincent"
+        ],
+        "friends": [
+          "Abigail",
+          "Penny",
+          "Sebastian"
+        ],
         "gifts": {
-          "love": ["Cactus Fruit", "Maple Bar", "Pizza", "Tigerseye"],
+          "love": [
+            "Cactus Fruit",
+            "Maple Bar",
+            "Pizza",
+            "Tigerseye"
+          ],
           "hate": [
             "Coal",
             "Copper Bar",
             "Duck Mayonnaise",
             "Gold Bar",
-            "Gold Ore", 
+            "Gold Ore",
             "Iridium Bar",
             "Iridium Ore",
             "Iron Bar",
@@ -254,7 +367,8 @@
             "Refined Quartz"
           ]
         },
-        "image": "https://stardewvalleywiki.com/mediawiki/images/9/94/Sam.png"
+        "image": "https://stardewvalleywiki.com/mediawiki/images/9/94/Sam.png",
+        "image-two": "https://stardewvalleywiki.com/mediawiki/images/b/be/Sam_Reading.png"
       },
       {
         "id": 10,
@@ -266,10 +380,23 @@
           "month": "Winter",
           "day": 10
         },
-        "family": ["Robin", "Maru", "Demetrius"],
-        "friends": ["Abigail", "Sam"],
+        "family": [
+          "Robin",
+          "Maru",
+          "Demetrius"
+        ],
+        "friends": [
+          "Abigail",
+          "Sam"
+        ],
         "gifts": {
-          "love": ["Frozen Tear", "Obsidian", "Pumpkin Soup", "Sashimi", "Void Egg"],
+          "love": [
+            "Frozen Tear",
+            "Obsidian",
+            "Pumpkin Soup",
+            "Sashimi",
+            "Void Egg"
+          ],
           "hate": [
             "Clay",
             "Complete Breakfast",
@@ -277,7 +404,8 @@
             "Omelet"
           ]
         },
-        "image": "https://stardewvalleywiki.com/mediawiki/images/a/a8/Sebastian.png"
+        "image": "https://stardewvalleywiki.com/mediawiki/images/a/a8/Sebastian.png",
+        "image-two": "https://stardewvalleywiki.com/mediawiki/images/a/a7/Sebastian_Blush.png"
       },
       {
         "id": 11,
@@ -289,16 +417,27 @@
           "month": "Spring",
           "day": 20
         },
-        "family": ["Marnie", "Jas"],
-        "friends": ["Maru"],
+        "family": [
+          "Marnie",
+          "Jas"
+        ],
+        "friends": [
+          "Maru"
+        ],
         "gifts": {
-          "love": ["Beer", "Hot Pepper", "Pepper Poppers", "Pizza"],
+          "love": [
+            "Beer",
+            "Hot Pepper",
+            "Pepper Poppers",
+            "Pizza"
+          ],
           "hate": [
             "Pickles",
             "Quartz"
           ]
         },
-        "image": "https://stardewvalleywiki.com/mediawiki/images/8/8b/Shane.png"
+        "image": "https://stardewvalleywiki.com/mediawiki/images/8/8b/Shane.png",
+        "image-two": "https://stardewvalleywiki.com/mediawiki/images/0/08/Shane_and_Charlie.png"
       }
     ]
   }

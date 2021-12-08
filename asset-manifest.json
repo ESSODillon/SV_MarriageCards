@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/SV_MarriageCards/static/css/main.2f6ab628.chunk.css",
-    "main.js": "/SV_MarriageCards/static/js/main.b200aa45.chunk.js",
-    "main.js.map": "/SV_MarriageCards/static/js/main.b200aa45.chunk.js.map",
+    "main.css": "/SV_MarriageCards/static/css/main.362e1d5b.chunk.css",
+    "main.js": "/SV_MarriageCards/static/js/main.3c15dd31.chunk.js",
+    "main.js.map": "/SV_MarriageCards/static/js/main.3c15dd31.chunk.js.map",
     "runtime-main.js": "/SV_MarriageCards/static/js/runtime-main.1150c12e.js",
     "runtime-main.js.map": "/SV_MarriageCards/static/js/runtime-main.1150c12e.js.map",
-    "static/js/2.43aec8c3.chunk.js": "/SV_MarriageCards/static/js/2.43aec8c3.chunk.js",
-    "static/js/2.43aec8c3.chunk.js.map": "/SV_MarriageCards/static/js/2.43aec8c3.chunk.js.map",
+    "static/js/2.4134b9bc.chunk.js": "/SV_MarriageCards/static/js/2.4134b9bc.chunk.js",
+    "static/js/2.4134b9bc.chunk.js.map": "/SV_MarriageCards/static/js/2.4134b9bc.chunk.js.map",
     "index.html": "/SV_MarriageCards/index.html",
-    "static/css/main.2f6ab628.chunk.css.map": "/SV_MarriageCards/static/css/main.2f6ab628.chunk.css.map",
-    "static/js/2.43aec8c3.chunk.js.LICENSE.txt": "/SV_MarriageCards/static/js/2.43aec8c3.chunk.js.LICENSE.txt",
+    "static/css/main.362e1d5b.chunk.css.map": "/SV_MarriageCards/static/css/main.362e1d5b.chunk.css.map",
+    "static/js/2.4134b9bc.chunk.js.LICENSE.txt": "/SV_MarriageCards/static/js/2.4134b9bc.chunk.js.LICENSE.txt",
     "static/media/styles.css": "/SV_MarriageCards/static/media/Stardew_Valley.94d4418a.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.1150c12e.js",
-    "static/js/2.43aec8c3.chunk.js",
-    "static/css/main.2f6ab628.chunk.css",
-    "static/js/main.b200aa45.chunk.js"
+    "static/js/2.4134b9bc.chunk.js",
+    "static/css/main.362e1d5b.chunk.css",
+    "static/js/main.3c15dd31.chunk.js"
   ]
 }
