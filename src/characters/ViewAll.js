@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Card from "./Card";
+import Card from "../components/Card";
 import Modal from "@mui/material/Modal";
 import Carousel from "react-elastic-carousel";
 
@@ -15,7 +15,6 @@ export default function ViewChar() {
       .then((response) => response.json())
       .then((data) => {
         setChars(data);
-
         setBachelorettes(data[0].Bachelorettes);
         setBachelors(data[1].Bachelors);
       });
@@ -63,13 +62,13 @@ export default function ViewChar() {
       >
         <div id="infoBox">
           <h1>{selectedChar.name}</h1>
+          <img src={selectedChar.image}></img>
+          <img
+            className="dialogue_box"
+            src="../../public/data/img/dialogue_box.png"
+          ></img>
         </div>
       </Modal>
-
-      <div className="headers">
-        <h1 className="SVFont">Stardew Valley</h1>
-        <h2 className="SVFont">Marriage Cards</h2>
-      </div>
 
       <Carousel itemsToShow={3}>
         <div>{gals[0]}</div>
