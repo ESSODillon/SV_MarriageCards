@@ -1,5 +1,5 @@
 import "./styles.css";
-import ViewChar from "./Characters/ViewChar";
+import ViewChar from "./characters/ViewChar";
 
 export default function App() {
   return (
