@@ -1,5 +1,6 @@
 * {
   /* border: red 2px solid; */
+  transition: all 0.5s;
 }
 
 @font-face {
@@ -51,6 +52,11 @@ body {
   margin-bottom: 20px;
 }
 
+.card:active,
+.card:active {
+  cursor: url(http://www.rw-designer.com/cursor-extern.php?id=152389), auto;
+}
+
 .name {
   font-family: StardewValley;
   font-size: 40px;
@@ -81,7 +87,7 @@ body {
   width: 80%;
   height: 80%;
   margin: 7% auto;
-  background-color: #eca65e;
+  background-color: rgba(251, 196, 112);
   border-radius: 6px;
   padding: 4px;
   position: relative;
@@ -92,8 +98,10 @@ body {
 }
 
 .arrow {
+  transition: all 0.5s;
   padding: 15px;
-  background-color: #fbc470;
+  background-color: rgba(251, 196, 112, 0.4);
+  border-radius: 15px;
   color: #56170d;
   margin-top: 90px;
 }
@@ -103,6 +111,20 @@ body {
   background-color: #eca65e;
   color: #56170d;
   cursor: url(http://www.rw-designer.com/cursor-extern.php?id=152389), auto;
+}
+
+.pagination_circle {
+  color: rgba(86, 23, 13, 0.5);
+}
+
+.pagination_circle:hover {
+  color: rgba(86, 23, 13);
+  cursor: url(http://www.rw-designer.com/cursor-extern.php?id=152389), auto;
+}
+
+.pagination_circle:active,
+.pagination_circle:focus {
+  color: #eca65e;
 }
 
 .dialogue-box {
@@ -122,6 +144,11 @@ body {
   }
 
   .menu {
-    flex-wrap: wrap;
+    margin-top: 175px;
+    flex-direction: column;
+  }
+
+  .menu_button {
+    margin-bottom: 30px;
   }
 }

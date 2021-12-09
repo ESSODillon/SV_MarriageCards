@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import Card from "../components/Card";
 import Modal from "@mui/material/Modal";
-import Button from "@mui/material/Button";
 import Carousel, { consts } from "react-elastic-carousel";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
+import CircleIcon from "@mui/icons-material/Circle";
 
 export default function Bachelorettes({ back }) {
   const [bachelorettes, setBachelorettes] = useState([]);
@@ -65,7 +65,26 @@ export default function Bachelorettes({ back }) {
         </div>
       </Modal>
 
-      <Carousel renderArrow={myArrow} itemsToShow={cardNum}>
+      <Carousel
+        renderArrow={myArrow}
+        itemsToShow={cardNum}
+        renderPagination={({ pages, activePage, onClick }) => {
+          return (
+            <div direction="row">
+              {pages.map((page) => {
+                const isActivePage = activePage === page;
+                return (
+                  <CircleIcon
+                    key={page}
+                    onClick={() => onClick(page)}
+                    active={isActivePage}
+                  />
+                );
+              })}
+            </div>
+          );
+        }}
+      >
         <div>{gals[0]}</div>
         <div>{gals[1]}</div>
         <div>{gals[2]}</div>

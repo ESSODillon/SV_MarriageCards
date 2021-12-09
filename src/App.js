@@ -1,5 +1,6 @@
 import "./styles.css";
 import SelectView from "./components/SelectView";
+import ViewAll from "./characters/ViewAll";
 
 export default function App() {
   return (

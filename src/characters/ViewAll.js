@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Card from "../components/Card";
 import Modal from "@mui/material/Modal";
-import Button from "@mui/material/Button";
 import Carousel, { consts } from "react-elastic-carousel";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
@@ -87,6 +86,23 @@ export default function ViewChar({ back }) {
         renderArrow={myArrow}
         className="carousel"
         itemsToShow={cardNum}
+        renderPagination={({ pages, activePage, onClick }) => {
+          return (
+            <div direction="row">
+              {pages.map((page) => {
+                const isActivePage = activePage === page;
+                return (
+                  <CircleIcon
+                    key={page}
+                    onClick={() => onClick(page)}
+                    active={isActivePage}
+                    className="pagination_circle"
+                  />
+                );
+              })}
+            </div>
+          );
+        }}
       >
         <div>{gals[0]}</div>
         <div>{gals[1]}</div>
@@ -103,6 +119,23 @@ export default function ViewChar({ back }) {
         renderArrow={myArrow}
         className="carousel"
         itemsToShow={cardNum}
+        renderPagination={({ pages, activePage, onClick }) => {
+          return (
+            <div direction="row">
+              {pages.map((page) => {
+                const isActivePage = activePage === page;
+                return (
+                  <CircleIcon
+                    className="pagination_circle"
+                    key={page}
+                    onClick={() => onClick(page)}
+                    active={isActivePage}
+                  />
+                );
+              })}
+            </div>
+          );
+        }}
       >
         <div>{guys[0]}</div>
         <div>{guys[1]}</div>
