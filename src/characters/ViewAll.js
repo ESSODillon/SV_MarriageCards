@@ -1,14 +1,22 @@
 import React, { useState, useEffect } from "react";
 import Card from "../components/Card";
 import Modal from "@mui/material/Modal";
-import Carousel from "react-elastic-carousel";
+import Button from "@mui/material/Button";
+import Carousel, { consts } from "react-elastic-carousel";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
+import CircleIcon from "@mui/icons-material/Circle";
 
-export default function ViewChar() {
+export default function ViewChar({ back }) {
   const [bachelors, setBachelors] = useState([]);
   const [bachelorettes, setBachelorettes] = useState([]);
   const [showModal, setModalOpen] = useState(false);
   const [chars, setChars] = useState([]);
   const [selectedChar, selectChar] = useState({});
+  const [cardNum, setCardNum] = useState(3);
+
+  window.addEventListener("load", changeCarousel);
+  window.addEventListener("resize", changeCarousel);
 
   useEffect(() => {
     fetch("data/characters.json", {
@@ -75,7 +83,11 @@ export default function ViewChar() {
         </div>
       </Modal>
 
-      <Carousel itemsToShow={3}>
+      <Carousel
+        renderArrow={myArrow}
+        className="carousel"
+        itemsToShow={cardNum}
+      >
         <div>{gals[0]}</div>
         <div>{gals[1]}</div>
         <div>{gals[2]}</div>
@@ -87,7 +99,11 @@ export default function ViewChar() {
       <br />
       <br />
 
-      <Carousel itemsToShow={3}>
+      <Carousel
+        renderArrow={myArrow}
+        className="carousel"
+        itemsToShow={cardNum}
+      >
         <div>{guys[0]}</div>
         <div>{guys[1]}</div>
         <div>{guys[2]}</div>
@@ -95,8 +111,28 @@ export default function ViewChar() {
         <div>{guys[4]}</div>
         <div>{guys[5]}</div>
       </Carousel>
+
+      <img
+        className="back_button"
+        src={process.env.PUBLIC_URL + "/data/img/back.png"}
+        onClick={back}
+      />
     </div>
   );
+
+  function changeCarousel() {
+    if (window.innerWidth > 1050) {
+      setCardNum(3);
+    }
+
+    if (window.innerWidth < 1050) {
+      setCardNum(2);
+    }
+
+    if (window.innerWidth < 750) {
+      setCardNum(1);
+    }
+  }
 
   function showInfo(charID, charKey) {
     // if the selected character ID is greater than 5, select the bachelors. If the selected character ID is less than 6, select the bachelorettes.
@@ -112,5 +148,19 @@ export default function ViewChar() {
     }
 
     setModalOpen(true);
+  }
+
+  function myArrow({ type, onClick, isEdge }) {
+    const pointer =
+      type === consts.PREV ? (
+        <ArrowBackIosNewIcon className="arrow" />
+      ) : (
+        <ArrowForwardIosIcon className="arrow" />
+      );
+    return (
+      <span className="arrow_box" onClick={onClick} disabled={isEdge}>
+        {pointer}
+      </span>
+    );
   }
 }

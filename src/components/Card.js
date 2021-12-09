@@ -44,6 +44,8 @@ function Characters({ id, num, name, area, image, showInfo }) {
             color: "white",
             "&:hover": {
               backgroundColor: "#6e2f18",
+              cursor:
+                "url(http://www.rw-designer.com/cursor-extern.php?id=152389), auto",
             },
           }}
           variant="contained"

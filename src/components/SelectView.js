@@ -8,29 +8,38 @@ import React, { useState } from "react";
 import Bachelors from "../characters/Bachelors";
 import Bachelorettes from "../characters/Bachelorettes";
 import ViewAll from "../characters/ViewAll";
+import Menu from "./Menu";
 
 export default function SelectView() {
-  const [view, setView] = useState(<ViewAll />);
-
-  return (
-    <div className="content">
-      <button onClick={setBachelors}>Bachelors</button>
-      <button onClick={setBachelorettes}>Bachelorettes</button>
-      <button onClick={setViewAll}>View All</button>
-
-      {view}
-    </div>
+  const [view, setView] = useState(
+    <Menu
+      bachelors={setBachelors}
+      bachelorettes={setBachelorettes}
+      viewAll={setViewAll}
+    />
   );
 
+  return <div className="content">{view}</div>;
+
   function setBachelors() {
-    setView(<Bachelors />);
+    setView(<Bachelors back={setMenu} />);
   }
 
   function setBachelorettes() {
-    setView(<Bachelorettes />);
+    setView(<Bachelorettes back={setMenu} />);
   }
 
   function setViewAll() {
-    setView(<ViewAll />);
+    setView(<ViewAll back={setMenu} />);
+  }
+
+  function setMenu() {
+    setView(
+      <Menu
+        bachelors={setBachelors}
+        bachelorettes={setBachelorettes}
+        viewAll={setViewAll}
+      />
+    );
   }
 }

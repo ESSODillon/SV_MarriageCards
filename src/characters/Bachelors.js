@@ -1,13 +1,20 @@
 import React, { useState, useEffect } from "react";
 import Card from "../components/Card";
 import Modal from "@mui/material/Modal";
-import Carousel from "react-elastic-carousel";
+import Button from "@mui/material/Button";
+import Carousel, { consts } from "react-elastic-carousel";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 
-export default function Bachelors() {
+export default function Bachelors({ back }) {
   const [bachelors, setBachelors] = useState([]);
   const [showModal, setModalOpen] = useState(false);
   const [chars, setChars] = useState([]);
   const [selectedChar, selectChar] = useState({});
+  const [cardNum, setCardNum] = useState(3);
+
+  window.addEventListener("load", changeCarousel);
+  window.addEventListener("resize", changeCarousel);
 
   useEffect(() => {
     fetch("data/characters.json", {
@@ -57,7 +64,7 @@ export default function Bachelors() {
         </div>
       </Modal>
 
-      <Carousel itemsToShow={3}>
+      <Carousel renderArrow={myArrow} itemsToShow={cardNum}>
         <div>{guys[0]}</div>
         <div>{guys[1]}</div>
         <div>{guys[2]}</div>
@@ -65,8 +72,28 @@ export default function Bachelors() {
         <div>{guys[4]}</div>
         <div>{guys[5]}</div>
       </Carousel>
+
+      <img
+        className="back_button"
+        src={process.env.PUBLIC_URL + "/data/img/back.png"}
+        onClick={back}
+      />
     </div>
   );
+
+  function changeCarousel() {
+    if (window.innerWidth > 1050) {
+      setCardNum(3);
+    }
+
+    if (window.innerWidth < 1050) {
+      setCardNum(2);
+    }
+
+    if (window.innerWidth < 750) {
+      setCardNum(1);
+    }
+  }
 
   function showInfo(charID, charKey) {
     // if the selected character ID is greater than 5, select the bachelors.
@@ -77,5 +104,19 @@ export default function Bachelors() {
     }
 
     setModalOpen(true);
+  }
+
+  function myArrow({ type, onClick, isEdge }) {
+    const pointer =
+      type === consts.PREV ? (
+        <ArrowBackIosNewIcon className="arrow" />
+      ) : (
+        <ArrowForwardIosIcon className="arrow" />
+      );
+    return (
+      <span className="arrow_box" onClick={onClick} disabled={isEdge}>
+        {pointer}
+      </span>
+    );
   }
 }
