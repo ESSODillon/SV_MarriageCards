@@ -13,10 +13,9 @@ export default function Bachelorettes({ back }) {
   const [selectedChar, selectChar] = useState({});
   const [cardNum, setCardNum] = useState(3);
 
-  window.addEventListener("load", changeCarousel);
-  window.addEventListener("resize", changeCarousel);
-
   useEffect(() => {
+    window.addEventListener("load", changeCarousel);
+    window.addEventListener("resize", changeCarousel);
     fetch("data/characters.json", {
       headers: {
         "Content-Type": "application/json",
@@ -26,8 +25,8 @@ export default function Bachelorettes({ back }) {
       .then((response) => response.json())
       .then((data) => {
         setChars(data);
-
         setBachelorettes(data[0].Bachelorettes);
+        changeCarousel();
       });
   }, []);
 
@@ -66,6 +65,7 @@ export default function Bachelorettes({ back }) {
       </Modal>
 
       <Carousel
+        className="carousel"
         renderArrow={myArrow}
         itemsToShow={cardNum}
         renderPagination={({ pages, activePage, onClick }) => {
@@ -78,6 +78,7 @@ export default function Bachelorettes({ back }) {
                     key={page}
                     onClick={() => onClick(page)}
                     active={isActivePage}
+                    className="pagination_circle"
                   />
                 );
               })}

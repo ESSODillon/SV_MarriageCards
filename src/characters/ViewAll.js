@@ -14,10 +14,10 @@ export default function ViewChar({ back }) {
   const [selectedChar, selectChar] = useState({});
   const [cardNum, setCardNum] = useState(3);
 
-  window.addEventListener("load", changeCarousel);
-  window.addEventListener("resize", changeCarousel);
-
   useEffect(() => {
+    window.addEventListener("load", changeCarousel);
+    window.addEventListener("resize", changeCarousel);
+
     fetch("data/characters.json", {
       headers: {
         "Content-Type": "application/json",
@@ -29,6 +29,7 @@ export default function ViewChar({ back }) {
         setChars(data);
         setBachelorettes(data[0].Bachelorettes);
         setBachelors(data[1].Bachelors);
+        changeCarousel();
       });
   }, []);
 
@@ -73,12 +74,8 @@ export default function ViewChar({ back }) {
         }}
       >
         <div id="infoBox">
-          <h1>{selectedChar.name}</h1>
+          <h1>Abigail</h1>
           <img src={selectedChar.image}></img>
-          <img
-            className="dialogue_box"
-            src="../../public/data/img/dialogue_box.png"
-          ></img>
         </div>
       </Modal>
 
@@ -155,6 +152,7 @@ export default function ViewChar({ back }) {
 
   function changeCarousel() {
     if (window.innerWidth > 1050) {
+      console.log("Hello");
       setCardNum(3);
     }
 

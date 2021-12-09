@@ -13,10 +13,9 @@ export default function Bachelors({ back }) {
   const [selectedChar, selectChar] = useState({});
   const [cardNum, setCardNum] = useState(3);
 
-  window.addEventListener("load", changeCarousel);
-  window.addEventListener("resize", changeCarousel);
-
   useEffect(() => {
+    window.addEventListener("load", changeCarousel);
+    window.addEventListener("resize", changeCarousel);
     fetch("data/characters.json", {
       headers: {
         "Content-Type": "application/json",
@@ -27,6 +26,7 @@ export default function Bachelors({ back }) {
       .then((data) => {
         setChars(data);
         setBachelors(data[1].Bachelors);
+        changeCarousel();
       });
   }, []);
 
@@ -65,6 +65,7 @@ export default function Bachelors({ back }) {
       </Modal>
 
       <Carousel
+        className="carousel"
         renderArrow={myArrow}
         itemsToShow={cardNum}
         renderPagination={({ pages, activePage, onClick }) => {
@@ -77,6 +78,7 @@ export default function Bachelors({ back }) {
                     key={page}
                     onClick={() => onClick(page)}
                     active={isActivePage}
+                    className="pagination_circle"
                   />
                 );
               })}

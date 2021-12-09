@@ -16,3 +16,15 @@ export default function App() {
     </div>
   );
 }
+
+// TO DO LIST
+
+// Get responsiveness to load when menu button is selected
+
+// Pagination styling for selected
+
+// Deployment
+
+// Modal styling
+
+// Animations for the view transitions (translateX)
