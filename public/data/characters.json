@@ -7,10 +7,7 @@
         "name": "Abigail",
         "area": "Pelican Town",
         "address": "Pierre's General Store",
-        "birthday": {
-          "month": "Fall",
-          "day": 13
-        },
+        "birthday": "Fall 13",
         "family": [
           "Pierre",
           "Caroline"
@@ -22,19 +19,15 @@
         "gifts": {
           "love": [
             "Amethyst",
-            "Banana Pudding",
-            "Blackberry Cobbler",
-            "Chocolate Cake",
-            "Pufferfish",
-            "Pumpkin",
-            "Spicy Eel"
+            "Pumpkin"
           ],
           "hate": [
             "Clay",
             "Holly"
           ]
         },
-        "image": "https://stardewvalleywiki.com/mediawiki/images/8/88/Abigail.png"
+        "image": "https://stardewvalleywiki.com/mediawiki/images/8/88/Abigail.png",
+        "image_two": "https://stardewvalleywiki.com/mediawiki/images/7/7c/Abigail_Surprised.png"
       },
       {
         "id": 1,
@@ -42,10 +35,7 @@
         "name": "Emily",
         "area": "Pelican Town",
         "address": "2 Willow Lane",
-        "birthday": {
-          "month": "Spring",
-          "day": 27
-        },
+        "birthday": "Spring 27",   
         "family": [
           "Haley"
         ],
@@ -54,25 +44,18 @@
         ],
         "gifts": {
           "love": [
-            "Amethyst",
             "Aquamarine",
-            "Cloth",
             "Emerald",
-            "Jade",
-            "Ruby",
-            "Survival Burger",
-            "Topaz",
-            "Wool"
+            "Survival Burger"
           ],
           "hate": [
             "Fish Taco",
             "Holly",
-            "Maki Roll",
-            "Salmon Dinner",
-            "Sashimi"
+            "Salmon Dinner"
           ]
         },
-        "image": "https://stardewvalleywiki.com/mediawiki/images/2/28/Emily.png"
+        "image": "https://stardewvalleywiki.com/mediawiki/images/2/28/Emily.png",
+        "image_two": "https://stardewvalleywiki.com/mediawiki/images/4/41/Emily_Yoba.png"
       },
       {
         "id": 2,
@@ -80,10 +63,7 @@
         "name": "Hailey",
         "area": "Pelican Town",
         "address": "2 Willow Lane",
-        "birthday": {
-          "month": "Spring",
-          "day": 14
-        },
+        "birthday": "Spring 14",
         "family": [
           "Emily"
         ],
@@ -93,17 +73,16 @@
         "gifts": {
           "love": [
             "Coconut",
-            "Fruit Salad",
             "Pink Cake",
             "Sunflower"
           ],
           "hate": [
             "Clay",
-            "Prismatic Shard",
             "Wild Horseradish"
           ]
         },
-        "image": "https://stardewvalleywiki.com/mediawiki/images/1/1b/Haley.png"
+        "image": "https://stardewvalleywiki.com/mediawiki/images/1/1b/Haley.png",
+        "image_two": "https://stardewvalleywiki.com/mediawiki/images/c/cd/Haley_Dirty_Surprised.png"
       },
       {
         "id": 3,
@@ -111,33 +90,27 @@
         "name": "Leah",
         "area": "Cindersap Forest",
         "address": "Leah's Cottage",
-        "birthday": {
-          "month": "Winter",
-          "day": 23
-        },
-        "family": [],
+        "birthday": "Winter 23",
+        "family": [
+          "None in Town"
+        ],
         "friends": [
           "Elliott"
         ],
         "gifts": {
           "love": [
-            "Goat Cheese",
-            "Poppyseed Muffin",
             "Salad",
-            "Stir Fry",
             "Truffle",
-            "Vegetable Medley",
             "Wine"
           ],
           "hate": [
-            "Bread",
-            "Hashbrowns",
             "Pancakes",
             "Pizza",
             "Void Egg"
           ]
         },
-        "image": "https://stardewvalleywiki.com/mediawiki/images/e/e6/Leah.png"
+        "image": "https://stardewvalleywiki.com/mediawiki/images/e/e6/Leah.png",
+        "image_two": "https://stardewvalleywiki.com/mediawiki/images/4/4a/Leah_Phone_Annoyed.png"
       },
       {
         "id": 4,
@@ -145,10 +118,7 @@
         "name": "Maru",
         "area": "The Mountain",
         "address": "24 Mountain Road",
-        "birthday": {
-          "month": "Summer",
-          "day": 10
-        },
+        "birthday": "Summer 10",
         "family": [
           "Demetrius",
           "Robin",
@@ -160,27 +130,17 @@
         ],
         "gifts": {
           "love": [
-            "Battery Pack",
             "Cauliflower",
-            "Cheese Cauliflower",
             "Diamond",
-            "Gold Bar",
-            "Iridium Bar",
-            "Miner's Treat",
-            "Pepper Poppers",
-            "Radioactive Bar",
-            "Rhubarb Pie",
-            "Strawberry"
+            "Gold Bar"
           ],
           "hate": [
             "Holly",
-            "Honey",
-            "Pickles",
-            "Snow Yam",
-            "Truffle"
+            "Snow Yam"
           ]
         },
-        "image": "https://stardewvalleywiki.com/mediawiki/images/f/f8/Maru.png"
+        "image": "https://stardewvalleywiki.com/mediawiki/images/f/f8/Maru.png",
+        "image_two": "https://stardewvalleywiki.com/mediawiki/images/5/5a/Maru_Nurse_Happy.png"
       },
       {
         "id": 5,
@@ -188,10 +148,7 @@
         "name": "Penny",
         "area": "Pelican Town",
         "address": "Trailer",
-        "birthday": {
-          "month": "Fall",
-          "day": 2
-        },
+        "birthday": "Fall 2",
         "family": [
           "Pam"
         ],
@@ -203,27 +160,16 @@
           "love": [
             "Diamond",
             "Emerald",
-            "Melon",
-            "Poppy",
-            "Poppyseed Muffin",
-            "Red Plate",
-            "Roots Platter",
-            "Sandfish",
-            "Tom Kha Soup"
+            "Melon"
           ],
           "hate": [
             "Beer",
             "Grape",
-            "Holly",
-            "Hops",
-            "Mead",
-            "Pale Ale",
-            "Piña Colada",
-            "Rabbit's Foot",
             "Wine"
           ]
         },
-        "image": "https://stardewvalleywiki.com/mediawiki/images/a/ab/Penny.png"
+        "image": "https://stardewvalleywiki.com/mediawiki/images/a/ab/Penny.png",
+        "image_two": "https://stardewvalleywiki.com/mediawiki/images/6/65/Penny_Dress_Blush.png"
       }
     ]
   },
@@ -235,10 +181,7 @@
         "name": "Alex",
         "area": "Pelican Town",
         "address": "1 River Road",
-        "birthday": {
-          "month": "Summer",
-          "day": 13
-        },
+        "birthday": "Summer 13",
         "family": [
           "Evelyn",
           "George"
@@ -257,7 +200,7 @@
           ]
         },
         "image": "https://stardewvalleywiki.com/mediawiki/images/0/04/Alex.png",
-        "image-two": "https://stardewvalleywiki.com/mediawiki/images/2/28/Alex_Blush.png"
+        "image_two": "https://stardewvalleywiki.com/mediawiki/images/2/28/Alex_Blush.png"
       },
       {
         "id": 7,
@@ -265,33 +208,28 @@
         "name": "Elliott",
         "area": "The Beach",
         "address": "Elliott's Cabin",
-        "birthday": {
-          "month": "Fall",
-          "day": 5
-        },
-        "family": [],
+        "birthday": "Fall 5",
+        "family": [
+          "None in Town"
+        ],
         "friends": [
           "Leah",
           "Willy"
         ],
         "gifts": {
           "love": [
-            "Crab Cakes",
             "Duck Feather",
             "Lobster",
-            "Pomegranate",
-            "Squid Ink",
-            "Tom Kha Soup"
+            "Pomegranate"
           ],
           "hate": [
             "Amaranth",
             "Quartz",
-            "Salmonberry",
             "Sea Cucumber"
           ]
         },
         "image": "https://stardewvalleywiki.com/mediawiki/images/b/bd/Elliott.png",
-        "image-two": "https://stardewvalleywiki.com/mediawiki/images/3/3e/Elliott_Surprised.png"
+        "image_two": "https://stardewvalleywiki.com/mediawiki/images/3/3e/Elliott_Surprised.png"
       },
       {
         "id": 8,
@@ -299,32 +237,27 @@
         "name": "Harvey",
         "area": "Pelican Town",
         "address": "Medical Clinic",
-        "birthday": {
-          "month": "Winter",
-          "day": 14
-        },
-        "family": [],
+        "birthday": "Winter 14",
+        "family": [
+          "None in Town"
+        ],
         "friends": [
           "Maru"
         ],
         "gifts": {
           "love": [
             "Coffee",
-            "Pickles",
-            "Super Meal",
             "Truffle Oil",
             "Wine"
           ],
           "hate": [
             "Coral",
             "Nautilus Shell",
-            "Rainbow Shell",
-            "Salmonberry",
-            "Spice Berry"
+            "Rainbow Shell"
           ]
         },
         "image": "https://stardewvalleywiki.com/mediawiki/images/9/95/Harvey.png",
-        "image-two": "https://stardewvalleywiki.com/mediawiki/images/2/21/Harvey_Surprised.png"
+        "image_two": "https://stardewvalleywiki.com/mediawiki/images/2/21/Harvey_Surprised.png"
       },
       {
         "id": 9,
@@ -332,10 +265,7 @@
         "name": "Sam",
         "area": "Pelican Town",
         "address": "1 Willow Lane",
-        "birthday": {
-          "month": "Summer",
-          "day": 17
-        },
+        "birthday": "Summer 17",
         "family": [
           "Kent",
           "Jodi",
@@ -350,25 +280,14 @@
           "love": [
             "Cactus Fruit",
             "Maple Bar",
-            "Pizza",
-            "Tigerseye"
+            "Pizza"
           ],
           "hate": [
-            "Coal",
-            "Copper Bar",
-            "Duck Mayonnaise",
-            "Gold Bar",
-            "Gold Ore",
-            "Iridium Bar",
-            "Iridium Ore",
-            "Iron Bar",
-            "Mayonnaise",
-            "Pickles",
-            "Refined Quartz"
+            "Duck Mayonnaise"
           ]
         },
         "image": "https://stardewvalleywiki.com/mediawiki/images/9/94/Sam.png",
-        "image-two": "https://stardewvalleywiki.com/mediawiki/images/b/be/Sam_Reading.png"
+        "image_two": "https://stardewvalleywiki.com/mediawiki/images/b/be/Sam_Reading.png"
       },
       {
         "id": 10,
@@ -376,10 +295,7 @@
         "name": "Sebastian",
         "area": "The Mountain",
         "address": "24 Mountain Road",
-        "birthday": {
-          "month": "Winter",
-          "day": 10
-        },
+        "birthday": "Winter 10",
         "family": [
           "Robin",
           "Maru",
@@ -392,20 +308,16 @@
         "gifts": {
           "love": [
             "Frozen Tear",
-            "Obsidian",
             "Pumpkin Soup",
-            "Sashimi",
             "Void Egg"
           ],
           "hate": [
             "Clay",
-            "Complete Breakfast",
-            "Farmer's Lunch",
             "Omelet"
           ]
         },
         "image": "https://stardewvalleywiki.com/mediawiki/images/a/a8/Sebastian.png",
-        "image-two": "https://stardewvalleywiki.com/mediawiki/images/a/a7/Sebastian_Blush.png"
+        "image_two": "https://stardewvalleywiki.com/mediawiki/images/a/a7/Sebastian_Blush.png"
       },
       {
         "id": 11,
@@ -413,10 +325,7 @@
         "name": "Shane",
         "area": "Cindersnap Forest",
         "address": "Marnie's Ranch",
-        "birthday": {
-          "month": "Spring",
-          "day": 20
-        },
+        "birthday": "Spring 20",
         "family": [
           "Marnie",
           "Jas"
@@ -428,7 +337,6 @@
           "love": [
             "Beer",
             "Hot Pepper",
-            "Pepper Poppers",
             "Pizza"
           ],
           "hate": [
@@ -437,7 +345,7 @@
           ]
         },
         "image": "https://stardewvalleywiki.com/mediawiki/images/8/8b/Shane.png",
-        "image-two": "https://stardewvalleywiki.com/mediawiki/images/0/08/Shane_and_Charlie.png"
+        "image_two": "https://stardewvalleywiki.com/mediawiki/images/0/08/Shane_and_Charlie.png"
       }
     ]
   }

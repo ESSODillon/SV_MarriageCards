@@ -13,6 +13,11 @@ export default function ViewChar({ back }) {
   const [selectedChar, selectChar] = useState({});
   const [cardNum, setCardNum] = useState(3);
 
+  const [friends, setFriends] = useState({});
+  const [family, setFamily] = useState({});
+  const [giftLove, setGiftLove] = useState({});
+  const [giftHate, setGiftHate] = useState({});
+
   useEffect(() => {
     window.addEventListener("load", changeCarousel);
     window.addEventListener("resize", changeCarousel);
@@ -44,6 +49,7 @@ export default function ViewChar({ back }) {
       friends={guy.friends}
       gifts={guy.gifts}
       image={guy.image}
+      image_two={guy.image_two}
       showInfo={showInfo}
     />
   ));
@@ -60,6 +66,7 @@ export default function ViewChar({ back }) {
       friends={gal.friends}
       gifts={gal.gifts}
       image={gal.image}
+      image_two={gal.image_two}
       showInfo={showInfo}
     />
   ));
@@ -72,9 +79,44 @@ export default function ViewChar({ back }) {
           setModalOpen(false);
         }}
       >
-        <div id="infoBox">
-          <h1>Abigail</h1>
-          <img src={selectedChar.image}></img>
+        <div className="infoBox">
+          <div className="infoBox_left">
+            <div className="column1">
+              <p className="modal_info">
+                Birthday:{" "}
+                <span className="modal_info_2">{selectedChar.birthday}</span>
+              </p>
+              <p className="modal_info">
+                Area: <span className="modal_info_2">{selectedChar.area}</span>
+              </p>
+              <p className="modal_info">
+                Address:{" "}
+                <span className="modal_info_2">{selectedChar.address}</span>
+              </p>
+              <p className="modal_info">
+                Family: <span className="modal_info_2">{family}</span>
+              </p>
+            </div>
+
+            <div className="column2">
+              <p className="modal_info">
+                Friends: <span className="modal_info_2">{friends}</span>
+              </p>
+              <p className="modal_info">
+                Gifts that {selectedChar.name} loves:{" "}
+                <span className="modal_info_2">{giftLove}</span>
+              </p>
+              <p className="modal_info">
+                Gifts that {selectedChar.name} hates:{" "}
+                <span className="modal_info_2">{giftHate}</span>
+              </p>
+            </div>
+          </div>
+
+          <div className="infoBox_right">
+            <img src={selectedChar.image_two}></img>
+            <h1>{selectedChar.name}</h1>
+          </div>
         </div>
       </Modal>
 
@@ -176,11 +218,19 @@ export default function ViewChar({ back }) {
     // Bachelorettes
     if (charID < 6) {
       selectChar(chars[0].Bachelorettes[charKey]);
+      setFriends(chars[0].Bachelorettes[charKey].friends.join(", "));
+      setFamily(chars[0].Bachelorettes[charKey].family.join(", "));
+      setGiftLove(chars[0].Bachelorettes[charKey].gifts.love.join(", "));
+      setGiftHate(chars[0].Bachelorettes[charKey].gifts.hate.join(", "));
     }
 
     // Bachelors
     if (charID > 5) {
       selectChar(chars[1].Bachelors[charKey]);
+      setFriends(chars[1].Bachelors[charKey].friends.join(" "));
+      setFamily(chars[1].Bachelors[charKey].family.join(" "));
+      setGiftLove(chars[1].Bachelors[charKey].gifts.love.join(", "));
+      setGiftHate(chars[1].Bachelors[charKey].gifts.hate.join(", "));
     }
 
     setModalOpen(true);

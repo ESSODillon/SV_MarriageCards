@@ -1,7 +1,6 @@
 import "./styles.css";
 import React from "react";
 import SelectView from "./components/SelectView";
-import ViewAll from "./characters/ViewAll";
 
 export default function App() {
   return (
@@ -13,15 +12,13 @@ export default function App() {
         />
       </div>
       <React.StrictMode>
-        <ViewAll />
+        <SelectView />
       </React.StrictMode>
     </div>
   );
 }
 
 // TO DO LIST
-
-// Modal styling
 
 // Animations for the view transitions (translateX)
 
