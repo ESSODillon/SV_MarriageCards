@@ -4,7 +4,6 @@ import Modal from "@mui/material/Modal";
 import Carousel, { consts } from "react-elastic-carousel";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
-import CircleIcon from "@mui/icons-material/Circle";
 
 export default function ViewChar({ back }) {
   const [bachelors, setBachelors] = useState([]);
@@ -89,11 +88,14 @@ export default function ViewChar({ back }) {
               {pages.map((page) => {
                 const isActivePage = activePage === page;
                 return (
-                  <CircleIcon
+                  <input
                     key={page}
+                    type="radio"
+                    name="radio"
+                    value={page}
                     onClick={() => onClick(page)}
                     active={isActivePage}
-                    className="pagination_circle"
+                    checked={isActivePage}
                   />
                 );
               })}
@@ -122,11 +124,14 @@ export default function ViewChar({ back }) {
               {pages.map((page) => {
                 const isActivePage = activePage === page;
                 return (
-                  <CircleIcon
-                    className="pagination_circle"
+                  <input
                     key={page}
+                    type="radio"
+                    name="radio_set2"
+                    value={page}
                     onClick={() => onClick(page)}
                     active={isActivePage}
+                    checked={isActivePage}
                   />
                 );
               })}

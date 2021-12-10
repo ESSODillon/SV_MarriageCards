@@ -1,4 +1,5 @@
 import "./styles.css";
+import React from "react";
 import SelectView from "./components/SelectView";
 import ViewAll from "./characters/ViewAll";
 
@@ -11,20 +12,17 @@ export default function App() {
           src={process.env.PUBLIC_URL + "/data/img/main_logo.png"}
         />
       </div>
-
-      <SelectView />
+      <React.StrictMode>
+        <ViewAll />
+      </React.StrictMode>
     </div>
   );
 }
 
 // TO DO LIST
 
-// Get responsiveness to load when menu button is selected
-
-// Pagination styling for selected
-
-// Deployment
-
 // Modal styling
 
 // Animations for the view transitions (translateX)
+
+// Deployment

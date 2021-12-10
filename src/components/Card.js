@@ -4,52 +4,33 @@ import CardContent from "@mui/material/CardContent";
 import CardActions from "@mui/material/CardActions";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import Avatar from "@mui/material/Avatar";
 
 function Characters({ id, num, name, area, image, showInfo }) {
   return (
-    <Card
-      className="card"
-      sx={{
-        minWidth: 275,
-        background: "linear-gradient(to bottom, #ECA65E, #FBC470, #ECA65E)",
-        position: "relative",
-      }}
-    >
-      <CardContent>
-        <Avatar
-          sx={{
-            position: "absolute",
-            bottom: "25%",
-            right: 0,
-            width: "100px",
-            height: "100px",
-          }}
-          src={image}
-        ></Avatar>
+    <Card className="card">
+      <CardContent className="card_content">
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
           {area}
         </Typography>
-        <p className="name" variant="h5" component="div">
+        <p className="name" component="div">
           {name}
         </p>
+        <img className="avatar" src={image}></img>
       </CardContent>
-      <CardActions>
+      <CardActions className="button_holder">
         <Button
           onClick={() => {
             showInfo(id, num);
           }}
           sx={{
             background: "#904c33",
-            color: "white",
             "&:hover": {
               backgroundColor: "#6e2f18",
-              cursor:
-                "url(http://www.rw-designer.com/cursor-extern.php?id=152389), auto",
             },
           }}
           variant="contained"
           size="small"
+          className="card_button"
         >
           Learn More
         </Button>

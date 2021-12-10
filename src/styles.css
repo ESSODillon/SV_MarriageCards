@@ -54,11 +54,24 @@ body {
 
 .card {
   margin-bottom: 20px;
+  width: 275px;
+  background: linear-gradient(to bottom, #eca65e, #fbc470, #eca65e);
+  position: relative;
 }
 
-.card:active,
-.card:active {
-  cursor: url(http://www.rw-designer.com/cursor-extern.php?id=152389), auto;
+.avatar {
+  position: absolute;
+  bottom: 25%;
+  right: 0;
+  width: 100px;
+  height: 100px;
+}
+
+.card_button {
+  color: white;
+  &:hover: {
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=152389), auto;
+  }
 }
 
 .name {
@@ -131,6 +144,32 @@ body {
   color: #eca65e;
 }
 
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+
+  background-color: rgba(86, 23, 13, 0.5);
+  transition: 0.2s all linear;
+  margin-right: 2.5px;
+
+  position: relative;
+  top: 4px;
+}
+
+input:hover {
+  background-color: rgba(86, 23, 13);
+  cursor: url(http://www.rw-designer.com/cursor-extern.php?id=152389), auto;
+}
+
+input:checked {
+  background-color: #eca65e;
+}
+
 /* @media only screen and (max-width: 1400px) {
   #infoBox {
     height: 60%;
@@ -159,5 +198,31 @@ body {
 
   .menu_button {
     margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .carousel:last-of-type {
+    margin-bottom: 30px;
+  }
+
+  .card {
+    width: 80vw;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .avatar {
+    position: relative;
+    margin-bottom: -2px;
+  }
+
+  .name {
+    margin-top: -5px;
+    margin-bottom: 3px;
+  }
+
+  .button_holder {
+    justify-content: center;
   }
 }

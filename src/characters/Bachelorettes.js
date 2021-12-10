@@ -4,7 +4,6 @@ import Modal from "@mui/material/Modal";
 import Carousel, { consts } from "react-elastic-carousel";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
-import CircleIcon from "@mui/icons-material/Circle";
 
 export default function Bachelorettes({ back }) {
   const [bachelorettes, setBachelorettes] = useState([]);
@@ -74,11 +73,14 @@ export default function Bachelorettes({ back }) {
               {pages.map((page) => {
                 const isActivePage = activePage === page;
                 return (
-                  <CircleIcon
+                  <input
                     key={page}
+                    type="radio"
+                    name="radio"
+                    value={page}
                     onClick={() => onClick(page)}
                     active={isActivePage}
-                    className="pagination_circle"
+                    checked={isActivePage}
                   />
                 );
               })}
