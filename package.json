@@ -2,7 +2,7 @@
   "name": "project2",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://ESSODillon.github.io/SV_MarriageCards",
+  "homepage": "http://essodillon.github.io/SV_MarriageCards",
   "dependencies": {
     "@emotion/react": "^11.6.0",
     "@emotion/styled": "^11.6.0",
