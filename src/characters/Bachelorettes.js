@@ -46,7 +46,7 @@ export default function ViewChar({ back }) {
       .then((response) => response.json())
       .then((data) => {
         setChars(data);
-        setBachelors(data[1].Bachelors);
+        setBachelorettes(data[0].Bachelorettes);
         changeCarousel();
       });
   }, []);
