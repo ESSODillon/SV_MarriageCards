@@ -1,31 +1,22 @@
-// This file will hold three buttons, which have on clicks that let you decide if you want to view Bachelors, Bachelorettes, or Both. This can be done using if statements
-
-// Animate buttons and carousels in and out. Also maybe a back button??
-
-// This function will be what is in App.js
-
-import { useState } from "react";
-import Button from "@mui/material/Button";
+// This file will hold three images that work as buttons, which have on clicks that send over data to SelectView.js which lets you decide if you want to view Bachelors, Bachelorettes, or Both.
 
 export default function Menu({ bachelors, bachelorettes, viewAll }) {
-  const [buttonWidth, setButtonWidth] = useState("30%");
-
-  window.addEventListener("load", changeButtonWidth);
-  window.addEventListener("resize", changeButtonWidth);
-
   return (
     <div className="content">
       <div className="menu">
+        {/* Button that activates the Bachelors view function in SelectView.js */}
         <img
           className="menu_button"
           src={process.env.PUBLIC_URL + "/data/img/guys.png"}
           onClick={bachelors}
         />
+        {/* Button that activates the Bachelorettes view function in SelectView.js */}
         <img
           className="menu_button"
           src={process.env.PUBLIC_URL + "/data/img/gals.png"}
           onClick={bachelorettes}
         />
+        {/* Button that activates the View All function in SelectView.js */}
         <img
           className="menu_button"
           src={process.env.PUBLIC_URL + "/data/img/viewAll.png"}
@@ -34,14 +25,4 @@ export default function Menu({ bachelors, bachelorettes, viewAll }) {
       </div>
     </div>
   );
-
-  function changeButtonWidth() {
-    if (window.innerWidth > 1200) {
-      setButtonWidth("30%");
-    }
-
-    if (window.innerWidth < 1200) {
-      setButtonWidth("50%");
-    }
-  }
 }

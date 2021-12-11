@@ -11,15 +11,10 @@ export default function App() {
           src={process.env.PUBLIC_URL + "/data/img/main_logo.png"}
         />
       </div>
+
       <React.StrictMode>
         <SelectView />
       </React.StrictMode>
     </div>
   );
 }
-
-// TO DO LIST
-
-// Animations for the view transitions (translateX)
-
-// Deployment

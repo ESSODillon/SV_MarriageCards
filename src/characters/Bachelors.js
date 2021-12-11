@@ -1,26 +1,42 @@
+// Imports for React Hooks useState and useEffect.
 import React, { useState, useEffect } from "react";
+// Import for Card.js blueprint for plugging JSON data into
 import Card from "../components/Card";
-import Modal from "@mui/material/Modal";
+// import for React Elastic Carousel to cycle through cards
 import Carousel, { consts } from "react-elastic-carousel";
+// Imports for Material UI components and icons
+import Modal from "@mui/material/Modal";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 
 export default function ViewChar({ back }) {
-  const [bachelors, setBachelors] = useState([]);
-  const [showModal, setModalOpen] = useState(false);
+  // React states for characters, bachelors, and bachelorettes, which lets us create both presentations seen in Bachelors.js and Bachelorettes.js
   const [chars, setChars] = useState([]);
+  const [bachelors, setBachelors] = useState([]);
+
+  // React state for one singular selected character, which lets the program decide which characters data to present on the Modal
   const [selectedChar, selectChar] = useState({});
+
+  // React state that starts as false, and turns true when you activate the modal to visible
+  const [showModal, setModalOpen] = useState(false);
+
+  // React state that determines how many cards the user can see on the carousel, changes state depending on screen width
   const [cardNum, setCardNum] = useState(3);
 
+  // All of these react states are for manipulating JSON arrays, since we need to use the .join() function later.
   const [friends, setFriends] = useState({});
   const [family, setFamily] = useState({});
   const [giftLove, setGiftLove] = useState({});
   const [giftHate, setGiftHate] = useState({});
 
   useEffect(() => {
+    // Adds event listeners for document load and window resize so the program can decide how many cards should be on the carousel
     window.addEventListener("load", changeCarousel);
     window.addEventListener("resize", changeCarousel);
 
+    // Fetches JSON data from the character.json file. Sets headers to solve a weird bug, thanks Stack Overflow.
+    // Sets the characters, bachelorettes and bachelors based on the JSON file format
+    // Activates the change carousel function when the page is loaded
     fetch("data/characters.json", {
       headers: {
         "Content-Type": "application/json",
@@ -35,6 +51,7 @@ export default function ViewChar({ back }) {
       });
   }, []);
 
+  // Maps cards based on the bachelors data, and sends over variables and functions for us to use in Card.js
   const guys = bachelors.map((guy, key) => (
     <Card
       num={guy.num}
@@ -54,12 +71,14 @@ export default function ViewChar({ back }) {
 
   return (
     <div className="content">
+      {/* HTML for the Modal component, sets the Modal to false when you close it, and determines its visibility based on the showModal state */}
       <Modal
         open={showModal}
         onClose={() => {
           setModalOpen(false);
         }}
       >
+        {/* Styling for the content in the modal. infoBox is an image called dialogue_box.png */}
         <div className="infoBox">
           <div className="infoBox_left">
             <div className="column1">
@@ -104,6 +123,7 @@ export default function ViewChar({ back }) {
       <br />
       <br />
 
+      {/* Carousel to cycle through the bachelors. Custom styling for the arrows and pagination */}
       <Carousel
         renderArrow={myArrow}
         className="carousel"
@@ -137,6 +157,7 @@ export default function ViewChar({ back }) {
         <div>{guys[5]}</div>
       </Carousel>
 
+      {/* Back button to go back to the menu view */}
       <img
         className="back_button"
         src={process.env.PUBLIC_URL + "/data/img/back.png"}
@@ -145,23 +166,27 @@ export default function ViewChar({ back }) {
     </div>
   );
 
+  // Determines window width, and sets the carousel to counts of 3, 2 or 1
   function changeCarousel() {
+    // Big laptop screens, tvs and monitors
     if (window.innerWidth > 1050) {
-      console.log("Hello");
       setCardNum(3);
     }
 
+    // Small laptops and tablets
     if (window.innerWidth < 1050) {
       setCardNum(2);
     }
 
+    // Phones
     if (window.innerWidth < 750) {
       setCardNum(1);
     }
   }
 
+  // Determines whether or not the character selected is a bachelor, or a bachelorette. Then sets all the data for the Modal, and seperates array items with a comma and a space. At the end of all that, it sets modal open to true so the user can view the modal.
   function showInfo(charID, charKey) {
-    // if the selected character ID is greater than 5, select the bachelors.
+    // if the selected character ID is greater than 5, select the bachelors. If the selected character ID is less than 6, select the bachelorettes.
 
     // Bachelors
     if (charID > 5) {
@@ -175,6 +200,7 @@ export default function ViewChar({ back }) {
     setModalOpen(true);
   }
 
+  // function that custom styles the arrows on the Carousel
   function myArrow({ type, onClick, isEdge }) {
     const pointer =
       type === consts.PREV ? (
